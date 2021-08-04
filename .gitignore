@@ -1,0 +1,17 @@
+/node_modules
+/dist
+/build
+/node
+/.gradle
+version.properties
+packages/**/node_modules/
+packages/**/dist/
+packages/**/build/
+package-lock.json
+yarn.lock
+*.log
+/.idea
+.env
+stats.html
+stats.json
+.yarn
