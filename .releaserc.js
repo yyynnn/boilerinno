@@ -1,6 +1,6 @@
-const gitlabUrl = process.env.REPO_HOST_URL || 'http://gitlab.ru-central1.internal'
+const gitlabUrl = process.env.REPO_HOST_URL || 'http://your-gitlab-path'
 const gitlabApiPathPrefix = '/api/v4'
-const repositoryUrl = process.env.PROJECT_REPO_URL || 'http://gitlab.ru-central1.internal/kk/ui.git'
+const repositoryUrl = process.env.PROJECT_REPO_URL || 'http://your-gitlab-repo-path'
 const currentBranch = process.env.CI_COMMIT_REF_NAME
 
 console.log('RELEASERC | process.env.PROJECT_REPO_URL', process.env.PROJECT_REPO_URL)
@@ -8,7 +8,7 @@ console.log('RELEASERC | process.env.REPO_HOST_URL', process.env.REPO_HOST_URL)
 console.log('RELEASERC | process.env.CI_COMMIT_REF_NAME', process.env.CI_COMMIT_REF_NAME)
 
 const IS_DEV = process.env.NODE_ENV === 'development'
-const branches = [currentBranch || 'develop5', 'release5', 'test5']
+const branches = [currentBranch || 'develop']
 const dummyPlugin = ['@semantic-release/exec']
 
 const gitlabPlugin = IS_DEV

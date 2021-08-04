@@ -6,7 +6,6 @@ const path = require('path')
 const ForkTsCheckerWebpackPlugin = require('fork-ts-checker-webpack-plugin')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
-const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin')
 const TsconfigPathsPlugin = require('tsconfig-paths-webpack-plugin')
 const webpack = require('webpack')
 const { merge } = require('webpack-merge')
@@ -66,13 +65,6 @@ module.exports = merge(baseConfig, {
                     semantic: true,
                     syntactic: true,
                     profile: true,
-                },
-            },
-        }),
-        new OptimizeCssAssetsPlugin({
-            cssProcessorOptions: {
-                discardComments: {
-                    removeAll: true,
                 },
             },
         }),

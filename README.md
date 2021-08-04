@@ -1,7 +1,16 @@
-OKO UI
+# BOILERINNO
+## Yarn based monorepo boilerplate project
+### With typescript + react + react-query + matrial-ui + styled-components + webpack and no lerna!
 
-https://git.nlmk.com/development_public/frontend
+* Forms - react-hook-form
+* Routing - react-router v6
+* Hooks - react-use
 
-http://development_public.gitpages.dp.nlmk.com/frontend/common-components
+Installation:
+* Just run `$ yarn`
 
-https://www.figma.com/file/18WlMi3dIMb8kMsempKDUU/UI-Kit-Web
+Getting started:
+* development starts with `yarn run dev`. Follow the instructions in cli menu.
+* check out folder structure (simplified feature slices + atomic design) in `packages/root-app/src/features/featureExample`
+* commit with `npm run cm`. This command will run commitizen commit menu
+* P.S.: run semantic release in CI env with `yarn run release:main`
