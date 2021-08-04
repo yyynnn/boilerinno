@@ -11,7 +11,6 @@ export const Normalize = createGlobalStyle`
   }
   body {
     margin: 0;
-    width: 1980px;
   }
   h1 {
     font-size: 2em;
@@ -228,11 +227,5 @@ export const Normalize = createGlobalStyle`
     clip: rect(0, 0, 0, 0);
     display: inherit;
     position: absolute;
-  }
-  .MuiListItemIcon-root {
-      justify-content: center!important;
-  }
-  .MuiDrawer-docked {
-      position: fixed;
   }
 `

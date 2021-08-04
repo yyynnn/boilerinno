@@ -1,14 +1,14 @@
 /* eslint-disable no-restricted-globals */
 import { Button, Typography } from '@material-ui/core'
 import React from 'react'
-import { useHistory } from 'react-router-dom'
+import { useNavigate } from 'react-router-dom'
 
 import { Spacer } from '../../uikit/atoms/Spacer'
 
 export const ErrorPage = ({ error = true, noAccess = false }) => {
-    const history = useHistory()
+    const navigate = useNavigate()
 
-    const gotoHomeHandler = () => history.push('/')
+    const gotoHomeHandler = () => navigate('/')
 
     const reloadHandler = () => location.reload()
 

@@ -1,3 +1,4 @@
+import { Container, Grid } from '@material-ui/core'
 import React from 'react'
 
 import { useFeaturePost } from '../queries/useFeaturePost'
@@ -12,12 +13,17 @@ const list: IListItemExample[] = [
 ]
 
 export const Feature = () => {
-    const { data, error, isFetching, status } = useFeaturePost('lala')
+    const { data, error, isFetching, status } = useFeaturePost('1')
     console.log('🐸 Pepe said => Feature => data', data)
     return (
-        <div>
-            {isFetching ? <p>{data}</p> : null}
+        <Container>
+            {!isFetching ? (
+                <p>
+                    Async data:
+                    {data.title}
+                </p>
+            ) : null}
             <FeatureTemplate list={list} />
-        </div>
+        </Container>
     )
 }
