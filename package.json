@@ -20,7 +20,6 @@
     "workspaces": [
         "packages/*"
     ],
-    "repository": "git+https://github.com/SomeoneDeployMe/react-playground.git",
     "author": "",
     "license": "ISC",
     "config": {
