@@ -1,6 +1,6 @@
 {
     "name": "boilerinno",
-    "description": "UI  project",
+    "description": "boilerinno boilerplate",
     "private": true,
     "scripts": {
         "dev": "node ./scripts/dev-menu.js",
@@ -23,10 +23,6 @@
     "repository": "git+https://github.com/SomeoneDeployMe/react-playground.git",
     "author": "",
     "license": "ISC",
-    "bugs": {
-        "url": "https://github.com/SomeoneDeployMe/react-playground/issues"
-    },
-    "homepage": "https://github.com/SomeoneDeployMe/react-playground#readme",
     "config": {
         "commitizen": {
             "path": "node_modules/cz-customizable"
